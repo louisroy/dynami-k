@@ -1,0 +1,71 @@
+<!doctype html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Dynami-k</title>
+		<meta name="description" content="">
+
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/blitzer/jquery-ui-1.8.18.custom.css">
+
+		<script src="js/libs/modernizr-2.5.3.min.js"></script>
+	</head>
+	<body>
+		<div role="main">
+			<div id="canvas"></div>
+		</div>
+		
+		<aside role="file-controls">
+			<form action="">
+				<div id="drop-zone">Drop it like it's hot</div>
+				<!--<input id="browse" type="file" name="files[]" value="Browse" multiple />-->
+				<!--<input id="run" type="button" value="Run" />-->
+				<!--<input id="save-png" type="button" value="Save to PNG" />-->
+				<input id="save-svg" type="button" value="Save to SVG" />
+				<textarea id="terminal"></textarea>
+				<output id="list"></output>
+			</form>
+		</aside>
+
+		<aside role="zoom-controls">
+			<!--
+			<input id="zoom-in" type="button" value="+" />
+			<div id="zoom"></div>
+			<input id="zoom-out" type="button" value="-" />
+			-->
+		</aside>
+
+		<aside role="animation-controls">
+			<!--
+			<input id="back" type="button" value="Back" />
+			<input id="play-pause" type="button" value="Play/Pause" />
+			<input id="forward" type="button" value="Forward" />
+			<div id="speed"></div>
+			-->
+		</aside>
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+
+		<script src="js/libs/raphael.js"></script>
+		
+		<script src="js/helpers/base64.js"></script>
+		<script src="js/helpers/colors.js"></script>
+
+		<script src="js/plugins.js"></script>
+		<script src="js/dynamik.js"></script>
+		
+		<form id="loader" action="save.php" method="post">
+			<textarea id="data" name="data"></textarea>
+		</form>
+
+		<script>
+			var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+	</body>
+</html>
